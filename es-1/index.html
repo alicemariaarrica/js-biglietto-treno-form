@@ -9,32 +9,37 @@
 </head>
 
 <body>
-
+<div class="title"><h1>Calcola il prezzo del biglietto</h1></div>
     <div class="container">
         <div class="row">
             <div class="col-4">
             <div class="form-group">
-                <label for="email">Email address:</label>
-                <input type="email" class="form-control" id="email">
+                <label for="nome">Nome Cognome</label>
+                <input type="nome" class="form-control" id="nome">
             </div>
         </div>
             <div class="col-4">
             <div class="form-group">
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd">
+                <label for="km">Km da percorrere</label>
+                <input type="km" class="form-control" id="km">
             </div>
         </div>
             <div class="col-4">
             <div class="form-group">
-                <label for="sel1">Seleziona età:</label>
-                <select class="form-control" id="sel1">
+                <label for="age">Fascia età:</label>
+                <select class="form-control" id="age">
                 
-                    <option>minorenne</option>
-                    <option>over 65</option>
+                    <option><18</option>
+                    <option>>65</option>
                     <option>18-65</option>
                 </select>
             </div>
         </div>
+
+        <button class="btn btn-primary" onclick="generaBiglietto()">Calcola Prezzo</button>
+        
+     
+        <div id="risultato" class="mt-3"></div>
     </div>
 
     <script src="./index.js"></script>
